@@ -230,7 +230,7 @@ div.panel.show {
     float: right;
     padding: 10px 25px;
     } 
-a.button {
+a.button, button{
     background: rgba(10, 190, 81, 1);
     padding: 10px 25px;
     margin-bottom:0;
