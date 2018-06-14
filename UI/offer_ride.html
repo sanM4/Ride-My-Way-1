@@ -1,0 +1,58 @@
+<!-- Created by Dickie-->
+
+
+<!DOCTYPE html> <html>
+   <head>
+       <meta charset="utf-8">
+       <meta name="description" content="create ride">
+       <title>create ride</title>
+       <script src="create_ride.js"></script>
+       <link rel="stylesheet" type="text/css" href="offer_ride.css">
+   </head>
+   
+   <body>
+       
+       <form name="register_ride">
+           
+           <fieldset>
+             <legend>Create A Ride</legend>
+             <label>Departure Point</label>
+             <input type="text" name="departure_point">
+             <label>Departure Date And Time</label>
+             <input type="datetime-local" name="departure_date_time">
+             <label>Destination</label>
+             <input type="text" name="text">
+             <label>Fare</label>
+             <input type="number" name="fare">
+    
+             <label>Stop Over</label>
+             <input type="text" name="stopover">
+             <hr>
+             
+                </fieldset>
+                <fieldset>
+                  <legend>More details </legend>
+                  <label>Maximum number of passengers</label>
+                    <input type="radio" name="passenger_number">Only One<br>
+                    <input type="radio" name="passenger_number">2<br>
+                    <input type="radio" name="passenger_number">3<br>
+                    <input type="radio" name="passenger_number">More than 3
+                    <hr>
+                    <label>Ride type</label>
+                    <input type="radio" name="type_ride">SUV<br>
+                    <input type="radio" name="type_ride">Salon<br>
+                    <input type="radio" name="type_ride">Van<br>
+                    <input type="radio" name="type_ride">Pick-Up
+                    <hr>
+                
+                </fieldset>
+                <fieldset>
+                    <legend>Message to passengers</legend>
+                    <textarea></textarea>
+                    <hr>
+                    <input type="submit" value="Post Ride">
+                </fieldset>
+           </form>
+   </body>
+    
+</html>
