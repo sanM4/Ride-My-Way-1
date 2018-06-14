@@ -6,8 +6,9 @@ body {
 sans-serif;
   padding: 5px;
   font-size: 62.5%;
-  background: #d6f0b9;
-  color: #182904;
+  /*background: #d6f0b9;
+  color: #182904;*/
+  background-color:#ccc;
 }
 a:link {
    color: #465336;
