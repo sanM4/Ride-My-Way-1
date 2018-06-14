@@ -1,0 +1,82 @@
+/* Created by Dickens*/
+
+
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, 
+sans-serif;
+  padding: 5px;
+  font-size: 62.5%;
+  background: #d6f0b9;
+  color: #182904;
+}
+a:link {
+   color: #465336;
+   text-decoration: none;
+}
+ul#hmenu {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #60a411;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+li {
+    float: left;
+}
+li a {
+    display: inline-block;
+    color: white !important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+li a:hover {
+    background-color: #487b0d;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+h1 {
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+h2 {
+    margin-top: 0px;
+    font-size: 1.6em;
+}
+p {
+    font-size: 1.4em;
+}
+img {
+    float: right;
+    margin: 0;
+    width: 100%;
+}
+figure {
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100%;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+}
+figcaption {
+    color: gray;
+    font-size: 1.1em;
+}
+footer {
+    font-size: 11px;
+    color: #465336;
+    border-top: 3px solid #abc094;
+    background-color: #c0d8a6;
+    padding: 5px;
+    text-align: center;
+    height: 60px;
+}
