@@ -1,0 +1,30 @@
+/* Created by Dickie*/
+
+
+body {
+    
+background:#EFEFEF;font-family:Arial,tahoma;
+}
+fieldset {
+    background:#fff;
+    border:1px solid #ccc;
+    padding:20px;
+    margin:20px auto;
+    width:500;
+}
+legend {
+  background:#fff;
+  border:1px solid #ccc;
+  padding:10px;
+}
+label{margin-bottom:10px;display:block;} 
+input{margin-bottom:10px;} 
+input[type="text"],input[type="password"],textarea{padding:8px;width:70%;display:block;} 
+hr {
+    border:2px solid #eee;
+}
+textarea {
+    
+    height:200px;
+    margin-bottom:10px;
+}
