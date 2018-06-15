@@ -11,7 +11,7 @@ a:link {
 	color: #465336;
 	text-decoration: none;
 }
-ul #hmenu {
+ul#hmenu {
 	width: 100%;
     list-style-type: none;
     margin: 0;
