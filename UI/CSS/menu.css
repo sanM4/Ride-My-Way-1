@@ -10,10 +10,10 @@ ul#hmenu {
     	font-size: 62.5%;
 }
 
-li {
+ul#hmenu li {
 	float: left;
 }
-li a {
+ul#hmenu li a {
     display: inline-block;
     color: white !important;
     text-align: center;
@@ -21,7 +21,7 @@ li a {
     text-decoration: none;
     font-size: 1.4em;
 }
-li a:hover {
+ul#hmenu li a:hover {
     background-color: #487b0d;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
