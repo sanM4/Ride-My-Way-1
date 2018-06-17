@@ -1,69 +1,95 @@
 <!-- Created by Dickie-->
 <!DOCTYPE html> <html>
- <head>
-  <title>Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link rel="stylesheet" type="text/css" href="profile.css">
-  <script src="profile.js"></script>
- </head>
- <body>
- 
-  <div class="profile-card">
-    <div class="image">
-      <img 
-src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" 
-alt="profile-picture" />
-    </div>
-    <div class="image-shadow"></div>
-    <div class="header">
-      <div class="title">
-        <span>John Smith</span>
-        <span>email@email.com</span>
-        <span>07123 ####</span>
-      </div>
-      </div>
-    </div>
-        <div class="boxMid">
-            <div id="sec">
-                
-                <div id="buttons">
-                   <a href="request_ride.html" class="button">Request Ride</a>
- 		   <a href="offer_ride.html" class="button">Offer Ride</a>
-
-</div>
+    <head>
+        <title>Profile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
+        <script src="js/profile.js"></script>
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="image">
+               <img src="img/profile.jpg" alt="profile-picture" />
             </div>
-            <div id="sec"><h3>Rides you have taken:</h3>
+                <div class="image-shadow"></div>
+                <div class="header">
+                    <div class="title">
+                        <span>John Smith</span>
+                        <span>email@email.com</span>
+                        <span>07123 ####</span>
+                    </div>
+                </div>
+                </div>
+                <div class="boxMid">
+                    <div id="sec">
+                        <div id="buttons">
+                            <a href="request_ride.html" class="button">Request Ride</a>
+ 		                         <a href="offer_ride.html" class="button">Offer Ride</a>
+                        </div>
+                    </div>
+                    <div id="sec"><h3>Rides you have taken:</h3></div>
+                    <div id="sec"><h3>Rides you have given:</h3></div>
+                    <div id="secBig"><h3>Requests to your latest ride offers</h3> 
+                        <button class="accordion">Kilifi - Malindi </button> 
+                            <div class="panel"> 
+                                <ul>
+                                    <li>Request from Jane 
+                                        <div id="buttons"> 
+                                            <button id="request_ride">Accept</button> 
+                                            <button id="create_ride">Reject</button> 
+                                        </div>
+                                    </li>
+                                </ul> 
+                                <ul>
+                                    <li>Request from John 
+                                        <button id="request_ride">Accept</button> 
+                                        <button id="create_ride">Reject</button> 
+                                      </div>
+                                    </li>
+                                </ul> 
+                        </div> 
+                    <button class="accordion">Naivasha - Kitale</button> 
+                        <div class="panel"> 
+                            <ul>
+                                <li>Request from Tim 
+                                      <div id="buttons">
+                                          <button id="request_ride">Accept</button> 
+                                          <button id="create_ride">Reject</button>
+                                      </div>
+                                </li>
+                            </ul> 
+                            <ul>
+                                <li>Request from Fred 
+                                    <div id="buttons">
+                                        <button id="request_ride">Accept</button> 
+                                        <button id="create_ride">Reject</button>
+                                    </div>
+                                </li>
+                            </ul> 
+                        </div> 
+                    <button class="accordion"> Kisumu - Mombasa </button> 
+                        <div class="panel"> 
+                            <ul>
+                                <li>Request from lucy 
+                                    <div id="buttons">
+                                        <button id="request_ride">Accept</button> 
+                                        <button id="create_ride">Reject</button> 
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Request from Ivy 
+                                    <div id="buttons">
+                                        <button id="request_ride">Accept</button> 
+                                        <button id="create_ride">Reject</button> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="sec"><h3>Rides you have given:</h3>
-            </div>
-            <div id="secBig">
-                <h3>Requests to your latest ride offers</h3> <button 
-class="accordion">Kilifi - Malindi </button> <div class="panel"> 
-<ul><li>Request from Jane <div id="buttons">
-                    <button id="request_ride">Accept</button> <button 
-id="create_ride">Reject</button> </div></li></ul> <ul><li>Request from John 
-<div id="buttons">
-                    <button id="request_ride">Accept</button> <button 
-id="create_ride">Reject</button> </div></li></ul> </div> <button 
-class="accordion">Naivasha - Kitale</button> <div class="panel"> 
-<ul><li>Request from Tim <div id="buttons">
-                    <button id="request_ride">Accept</button> <button 
-id="create_ride">Reject</button> </div></li></ul> <ul><li>Request from Fred 
-<div id="buttons">
-                    <button id="request_ride">Accept</button> <button 
-id="create_ride">Reject</button> </div></li></ul> </div> <button 
-class="accordion"> Kisumu - Mombasa </button> <div class="panel"> 
-<ul><li>Request from lucy <div id="buttons">
-                    <button id="request_ride">Accept</button> <button 
-id="create_ride">Reject</button> </div></li></ul> <ul><li>Request from Ivy 
-<div id="buttons">
-                    <button id="request_ride">Accept</button> <button 
-id="create_ride">Reject</button> </div></li></ul> </div>
-            </div>
-            </div>
-            </div>
-            
         </div>
-    </div>
- </body>
+    </body>
 </html>
