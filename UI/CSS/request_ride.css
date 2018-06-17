@@ -2,17 +2,6 @@
 body{
     background-color:#ccc;
         }
-
-ul#hmenu {
-    width: 100%;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #60a411;
-        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
 button.accordion {
     background-color: #eee;
     color: #444;

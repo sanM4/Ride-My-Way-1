@@ -1,0 +1,30 @@
+ul#hmenu {
+	width: 100%;
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #60a411;
+    	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+li {
+	float: left;
+}
+li a {
+    display: inline-block;
+    color: white !important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+li a:hover {
+    background-color: #487b0d;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
