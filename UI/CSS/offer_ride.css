@@ -1,5 +1,5 @@
 /* Created by Dickie*/
-sbody {
+body {
     background:#EFEFEF;
     font-family:Arial,tahoma;
 }
@@ -8,7 +8,7 @@ fieldset {
     border:1px solid #ccc;
     padding:20px;
     margin:20px auto;
-    width:500;
+    width:60%;
 }
 legend {
     background:#fff;
