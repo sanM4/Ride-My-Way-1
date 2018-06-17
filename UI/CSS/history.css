@@ -45,12 +45,12 @@ div.panel.show {
  } 
 #buttons :first-child {
     float: right;
-    } 
+} 
 #buttons :nth-child(2) {
     margin-right: 15px;
     float: right;
     padding: 10px 25px;
-    } 
+} 
 button {
     background: rgba(10, 190, 81, 1);
     padding: 10px 25px;

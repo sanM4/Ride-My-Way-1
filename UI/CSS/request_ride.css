@@ -1,5 +1,4 @@
 /* Created by Dickens Onyango */
-
 body{
     background-color:#ccc;
         }
@@ -28,7 +27,7 @@ button.accordion:after { /* Unicode character for "plus" sign (+) is '\02795'
 }
 button.accordion.active:after { /* Unicode character for "minus" sign (-) is 
 '\2796' */
-    content: "\2796";
+    content: '\2796';
 }
 div.panel {
     padding: 0 18px;
