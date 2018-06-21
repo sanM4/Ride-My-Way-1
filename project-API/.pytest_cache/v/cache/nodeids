@@ -1,3 +1,4 @@
 [
+  "test_fetchall_rides.py::test_get_all_rides",
   "test_run.py::test_app_runs"
 ]
