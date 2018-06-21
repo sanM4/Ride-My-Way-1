@@ -1,7 +1,7 @@
 from APP import app
 import json
 
-def test_get_all_rides():
+def test_get_byId():
     """test that the API can fetch ride by id"""
     client = app.test_client()
     res = client.get('/api/v1/rides/1')
