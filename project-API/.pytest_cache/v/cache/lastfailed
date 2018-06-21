@@ -1,4 +1,6 @@
 {
   "APP/test_create_ride.py::test_create_ride": true,
-  "APP/test_create_ride.py::test_get_all_rides": true
+  "APP/test_create_ride.py::test_get_all_rides": true,
+  "test_fetchall_rides.py::test_get_all_rides": true,
+  "test_run.py::test_app_runs": true
 }
