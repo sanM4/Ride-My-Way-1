@@ -12,26 +12,31 @@ def ride_resource():
 "passengers":{"usernames":["jeff", "steve"],"number":2}, "stop_over":["Mtito Andei"]}] 
     return rides
 
-@Bluep.route('/rides', methods=['GET'])
+@Bluep.route('/api/v1/rides', methods=['GET'])
 def get_rides():
     """get all ride"""
     return make_response(jsonify(ride_resource()))
 
-@Bluep.route('/rides/<int:id>', methods=['GET'])
-def get_user(id):
-    """get ride by id"""
-    pass 
 
-@Bluep.route('/rides', methods=['POST'])
-def create_ride():
-    """create ride"""
-    pass
+@Bluep.route('/api/v1/rides', methods=['POST'])
+def create_ride(): 
+    data = request.get_json()
+    username = data['username']
+    email = data['email']
+    password = data['password']
+    return make_response(jsonify({
+                                 "status": "ok",
+                                 "username": username , 
+                                 "email": email, 
+                                 "password": password
+                                 }), 201)
+
 
 @Bluep.route('/rides/<int:id>/driver', methods=['GET'])
 def get_driver(id):
     pass
 
-@Bluep.route('/rides/<int:id>', methods=['PUT'])
+@Bluep.route('/rides/<int:id>', methods=['POST'])
 def request_user(id):
     pass
 
