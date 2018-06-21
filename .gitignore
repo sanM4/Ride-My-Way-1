@@ -1,3 +1,6 @@
-/venv
+/APP/venv
 *pyc
 /.pytest_cache
+/__pycache__
+/APP/__pycache__
+/APP/.pytest_cache
