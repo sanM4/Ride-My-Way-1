@@ -20,7 +20,9 @@ def get_rides():
 @Bluep.route('/rides/<int:id>', methods=['GET'])
 def get_user(id):
     """get ride by id"""
-    pass 
+    for ride in ride_resource():
+        if ride["id"] == id:
+            return make_response(jsonify(ride))
 
 @Bluep.route('/rides', methods=['POST'])
 def create_ride():
