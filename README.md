@@ -1,7 +1,5 @@
-[![Coverage Status](https://coveralls.io/repos/github/Dygn/Ride-My-Way/badge.svg?branch=master)](https://coveralls.io/github/Dygn/Ride-My-Way?branch=master)
 
-`<git clone https://github.com/Dygn/Ride-My-Way.git>`
 # Ride-My-Way
-Car pooling  web application
-<pre><code>git clone https://github.com/Dygn/Ride-My-Way.git
-</code></pre>
+Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers
+
+
