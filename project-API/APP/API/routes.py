@@ -13,12 +13,27 @@ def ride_resource():
     return rides
 
 
-@Bluep.route('/rides/login', methods=['GET'])
+@Bluep.route('/login', methods=['GET'])
 def login():
     return make_response(jsonify({
                                  "status": "ok",
-                                 "message": "You are logged in" 
+                                 "message": "logged in" 
                                  }), 200)
+
+
+
+@Bluep.route('/register',  methods = ['POST'])
+def register():
+    data = request.get_json()
+    username = data['username']
+    email = data['email']
+    password = data['password']
+    return make_response(jsonify({
+                                 "status": "ok",
+                                 "username": username , 
+                                 "email": email, 
+                                 "password": password
+                                 }), 201)
 
 
 @Bluep.route('/rides', methods=['GET'])
@@ -48,7 +63,7 @@ def create_ride():
     data = request.get_json()
     id = data['id']
     destination = data['destination']
-    departure_point = data['departure_point']
+    #departure_point = data['departure_point']
     fare = data['fare']
     driver = data['driver']
     return make_response(jsonify({"results":"success",
