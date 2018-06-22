@@ -6,10 +6,11 @@ def test_create_ride():
     client = app.test_client()
     dt={"id": 6, "destination":"san francisco", "departure_point":"miami", "fare":1000, "driver":{"username":"amos"}}
     response = client.post('/api/v1/rides', data = json.dumps(dt) , content_type = 'application/json' )
-    #res = json.loads(response.data)
+    result = json.loads(response.data)
     assert response.status_code == 201
     assert 'destination' in response.get_data(as_text=True)
-    #assert data['status'] == 'success'
+    assert result['status'] == 'ok'
+    assert result['destination'] =='san francisco'
     #assert isinstance(dat, list) == True
     #assert len(dat) == 3
     #assertEqual(data['count'], 0)
