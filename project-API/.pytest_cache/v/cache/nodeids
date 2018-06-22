@@ -1,6 +1,0 @@
-[
-  "test_fetchall_rides.py::test_get_all_rides",
-  "test_request_ride.py::test_create_ride",
-  "test_run.py::test_app_runs",
-  "APP/test_create_ride.py::test_create_ride"
-]
