@@ -26,7 +26,7 @@ def create_ride():
     departure_point = data['departure_point']
     fare = data['fare']
     driver = data['driver']
-    return make_response(jsonify({"results":"success"
+    return make_response(jsonify({"results":"success",
                                  "status": "ok",
                                  "id": id , 
                                  "destination": destination, 
