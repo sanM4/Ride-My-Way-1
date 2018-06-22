@@ -1,16 +1,15 @@
 from APP import app
 import json
 
-def test_get_all_rides():
-    """test that the API can fetch all rides available"""
+
+
+def test_create_ride():
+    """test that requests ride"""
     client = app.test_client()
-    res = client.get('/api/v1/rides')
-    data = json.loads(res.data.decode())
-    assert res.status_code == 200
-    #assert data['status'] == 'success'
-    assert isinstance(data, list) == True
-    assert len(data) == 2
-    #assertEqual(data['count'], 0)
-    #assertIsInstance(data['count'], int)
-    #assertEqual(data['previous'], None)
-    #assertEqual(data['next'], None)
+    dt={"requests": {"dickens":"requesting"}}
+    response = client.put('/api/v1/rides/1', data = json.dumps(dt) , content_type = 'application/json' )
+    result = json.loads(response.data)
+    assert response.status_code == 201
+    assert 'destination' in response.get_data(as_text=True)
+    assert result['status'] == 'ok'
+    assert result['destination'] =='san francisco'
