@@ -6,3 +6,4 @@ project-API/.pytest_cache
 project-API/__pycache__
 *pyc
 .pytest_cache
+

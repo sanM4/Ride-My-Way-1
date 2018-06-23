@@ -5,16 +5,20 @@ python:
     - 3.6
 # install dependencies
 install:
-    - pip install -r ./project-API/APP/requirements/dev.txt 
+    - pip install -r ./project-API/APP/requirements/dev.txt
     - pip install coveralls
 # check style
 script:
     - pylint --output-format=text routes.py
-#command to run tests
+
+#command to run tests    
 script:
     - coverage run -m pytest # or py.test for Python versions 3.5 and below 
 branches:
     - /.*/
+after_success: 
+    - coveralls
+    - codeclimate-test-reporter
 after_success: 
     - coveralls
     - codeclimate-test-reporter
