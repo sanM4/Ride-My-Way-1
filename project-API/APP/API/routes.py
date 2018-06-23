@@ -23,7 +23,7 @@ def get_user(id):
 
 @Bluep.route('/rides/<int:id>', methods=['PUT'])
 def update_ride_requests(id):
-    """get ride by id"""
+    """update ride by id"""
     for ride in ride_resource():
        if ride["id"] == id:
            data=request.get_json()
@@ -45,5 +45,4 @@ def create_ride():
                                  "destination": destination, 
                                  "fare": fare,
                                  "driver":driver}), 201)
-
 
