@@ -1,8 +1,6 @@
 from APP import app
 import json
 
-
-
 def test_create_ride():
     """test that requests ride"""
     client = app.test_client()
