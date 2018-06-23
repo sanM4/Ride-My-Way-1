@@ -4,7 +4,5 @@
 # Ride-My-Way
 Car pooling  web application
 
-
-Introduction
-
+Pivot tracker https://www.pivotaltracker.com/n/projects/217849
 

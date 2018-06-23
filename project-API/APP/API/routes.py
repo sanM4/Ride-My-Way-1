@@ -1,9 +1,6 @@
 from APP.API import Bluep
-
 import json
-
 from flask import request, jsonify, make_response
-
 
 def ride_resource():
     """implement ride resource as a list of dictionary"""
@@ -11,7 +8,6 @@ def ride_resource():
  "passengers":{"usernames":["jane", "jack", "frank"],"number":3}, "stop_over":["Nakuru","Limuru"]}, {"id":2, "destination":"Mombasa", "departure_point":"Nairobi", "fare":1200, "driver":{"username":"Milac", "gender":"female"},
 "passengers":{"usernames":["jeff", "steve"],"number":2}, "stop_over":["Mtito Andei"]}] 
     return rides
-
 
 @Bluep.route('/login', methods=['GET'])
 def login():
@@ -34,7 +30,6 @@ def register():
                                  "email": email, 
                                  "password": password
                                  }), 201)
-
 
 @Bluep.route('/rides', methods=['GET'])
 def get_rides():
@@ -76,11 +71,4 @@ def create_ride():
                                 }), 201)
 
 
-@Bluep.route('/rides/<int:id>/driver', methods=['GET'])
-def get_driver(id):
-    pass
-
-@Bluep.route('/rides/<int:id>', methods=['POST'])
-def request_user(id):
-    pass
 
