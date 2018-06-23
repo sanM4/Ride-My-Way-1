@@ -5,7 +5,7 @@ python:
     - 3.6
 # install dependencies
 install:
-    - pip install -r ./project-API/APP/requirements/dev.txt
+    - pip install -r ./project-API/APP/requirements/dev.txt 
     - pip install coveralls
 # check style
 script:

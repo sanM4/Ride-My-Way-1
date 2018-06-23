@@ -51,14 +51,15 @@ def update_ride_requests(id):
            data=request.get_json()
            ride["requests"].append(data)
             
-           return make_response(jsonify(ride), 201)
+           return make_response(jsonify(ride), 201))
 
 @Bluep.route('/rides', methods=['POST'])
-def create_ride(): 
+def create_ride():
+  """ create ride"""
     data = request.get_json()
     id = data['id']
     destination = data['destination']
-    #departure_point = data['departure_point']
+    departure_point = data['departure_point']
     fare = data['fare']
     driver = data['driver']
     return make_response(jsonify({"results":"success",
@@ -66,9 +67,5 @@ def create_ride():
                                  "id": id , 
                                  "destination": destination, 
                                  "fare": fare,
-                                 "driver":driver
-
-                                }), 201)
-
-
+                                 "driver": driver}), 201)
 

@@ -11,6 +11,3 @@ def test_create_ride():
     assert 'destination' in response.get_data(as_text=True)
     assert result['status'] == 'ok'
     assert result['destination'] =='san francisco'
-    
-
-    
