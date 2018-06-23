@@ -12,7 +12,14 @@ def ride_resource():
 @Bluep.route('/rides', methods=['GET'])
 def get_rides():
     """get all ride"""
-    return make_response(jsonify(ride_resource())
+    return make_response(jsonify(ride_resource()))
+
+@Bluep.route('/rides/<int:id>', methods=['GET'])
+def get_user(id):
+    """get ride by id"""
+    for ride in ride_resource():
+        if ride["id"] == id:
+            return make_response(jsonify(ride))
 
 @Bluep.route('/rides', methods=['POST'])
 def create_ride():
@@ -30,5 +37,4 @@ def create_ride():
                                  "driver":driver
 
                                 }), 201)
-
 
