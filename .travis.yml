@@ -15,10 +15,9 @@ script:
     - pylint --output-format=text routes.py
 
 #command to run tests    
-script:
-    - pytest # or py.test for Python versions 3.5 and below 
+script: 
     - coverage run -m pytest
-    - coverage report -m
+ 
 branches:
     - /.*/
 
