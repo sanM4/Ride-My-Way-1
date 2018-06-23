@@ -13,6 +13,14 @@ install:
 script:
     - pylint --output-format=text routes.py
 
-#command to run tests    
+#command to run tests
 script:
     - pytest # or py.test for Python versions 3.5 and below 
+    - coverage run -m pytest
+    - coverage report -m
+branches:
+    - /.*/
+
+after_success: 
+    - coveralls
+    - codeclimate-test-reporter
