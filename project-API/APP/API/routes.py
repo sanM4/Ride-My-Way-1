@@ -11,15 +11,16 @@ def ride_resource():
 
 @Bluep.route('/login', methods=['GET'])
 def login():
+  """login into api"""
     return make_response(jsonify({
                                  "status": "ok",
                                  "message": "logged in" 
                                  }), 200)
 
 
-
 @Bluep.route('/register',  methods = ['POST'])
 def register():
+  """register into API """
     data = request.get_json()
     username = data['username']
     email = data['email']
@@ -45,17 +46,16 @@ def get_user(id):
 
 @Bluep.route('/rides/<int:id>', methods=['PUT'])
 def update_ride_requests(id):
-    """get ride by id"""
+    """update ride by id"""
     for ride in ride_resource():
        if ride["id"] == id:
            data=request.get_json()
            ride["requests"].append(data)
-            
            return make_response(jsonify(ride), 201))
-
+            
 @Bluep.route('/rides', methods=['POST'])
 def create_ride():
-  """ create ride"""
+  """create ride"""
     data = request.get_json()
     id = data['id']
     destination = data['destination']
@@ -68,4 +68,3 @@ def create_ride():
                                  "destination": destination, 
                                  "fare": fare,
                                  "driver": driver}), 201)
-

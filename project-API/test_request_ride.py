@@ -9,5 +9,4 @@ def test_create_ride():
     result = json.loads(response.data.decode())
     assert response.status_code == 201
     assert response.content_type == 'application/json'
-    
-
+   
