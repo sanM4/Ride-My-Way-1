@@ -18,7 +18,7 @@ Ride-My-Way App is a carpooling application that provides drivers with the abili
 
 
 ---
-##Installation##
+## Installation
 
 <p><code>$ git clone https://github.com/dygn/Ride-My-Way.git</code></p>
 
@@ -27,12 +27,12 @@ cd into the folder
 <p><code>$ cd Ride-My-Way</code></p>
 
 ---
-##Dependencies##
+## Dependencies
 Install dependencies
 <p><code>$ pip install -r ./project-API/APP/requirements/dev.txt</p></code>
 
 ---
-##Testing##
+## Testing
 set up unit testing environment:
 
 <p><code>$ pip install pytest</p></code>
@@ -45,20 +45,22 @@ start server
 <p><code> $ python run.py</p></code>
 
 ---
-##UI Templates##
+## UI Templates
 [http://dygn.github.io/Ride-My-Way/UI](http://dygn.github.io/Ride-My-Way/UI/)
 
 ---
-##Heroku deployment##
+## Heroku deployment
 <p><code>$ pip install pytest</p></code>
 
 ---
-##API Documentation##
+## API Documentation
 
-###Authors###
+### Authors
 1. Dickens Onyango
 
 ---
-##Acknowledgments##
+## Acknowledgment
+
+
 Pivot tracker https://www.pivotaltracker.com/n/projects/217849
 
