@@ -1,9 +1,6 @@
 from APP.API import Bluep
-
 import json
-
 from flask import request, jsonify, make_response
-
 
 def ride_resource():
     """implement ride resource as a list of dictionary"""
@@ -15,23 +12,23 @@ def ride_resource():
 @Bluep.route('/rides', methods=['GET'])
 def get_rides():
     """get all ride"""
-    return make_response(jsonify(ride_resource()))
-
-@Bluep.route('/rides/<int:id>', methods=['GET'])
-def get_user(id):
-    """get ride by id"""
-    pass 
+    return make_response(jsonify(ride_resource())
 
 @Bluep.route('/rides', methods=['POST'])
 def create_ride():
-    """create ride"""
-    pass
+    data = request.get_json()
+    id = data['id']
+    destination = data['destination']
+    departure_point = data['departure_point']
+    fare = data['fare']
+    driver = data['driver']
+    return make_response(jsonify({"results":"success",
+                                 "status": "ok",
+                                 "id": id , 
+                                 "destination": destination, 
+                                 "fare": fare,
+                                 "driver":driver
 
-@Bluep.route('/rides/<int:id>/driver', methods=['GET'])
-def get_driver(id):
-    pass
+                                }), 201)
 
-@Bluep.route('/rides/<int:id>', methods=['PUT'])
-def request_user(id):
-    pass
 
