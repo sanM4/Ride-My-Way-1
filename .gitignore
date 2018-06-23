@@ -1,6 +1,8 @@
-/APP/venv
+project-API/APP/API/__pycache__
+project-API/APP/.pytest_cache
+project-API/APP/__pycache__
+project-API/APP/venv
+project-API/.pytest_cache
+project-API/__pycache__
 *pyc
-/.pytest_cache
-/__pycache__
-/APP/__pycache__
-/APP/.pytest_cache
+.pytest_cache
