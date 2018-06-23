@@ -21,10 +21,8 @@ pytest==3.6.1
 six==1.11.0
 Werkzeug==0.14.1
 wrapt==1.10.11
-
 # Deployment
-#gunicorn==19.7.1
-
+gunicorn==19.7.1
 # Test
 pytest==3.6.1
 #behave==1.2.5
