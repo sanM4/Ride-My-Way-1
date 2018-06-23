@@ -1,0 +1,4 @@
+[
+  "project-API/test_fetchall_rides.py::test_get_all_rides",
+  "project-API/test_run.py::test_app_runs"
+]
