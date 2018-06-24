@@ -32,7 +32,7 @@ def update_ride_requests(id):
 
 @Bluep.route('/rides', methods=['POST'])
 def create_ride():
-  """create ride"""
+    """create ride"""
     data = request.get_json()
     id = data['id']
     destination = data['destination']
