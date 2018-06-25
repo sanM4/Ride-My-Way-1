@@ -45,6 +45,21 @@ start server
 <p><code> $ python run.py</p></code>
 
 ---
+##End points
+All rides
+https://riddemyway.herokuapp.com/api/v1/rides
+
+Get ride by id
+https://riddemyway.herokuapp.com/api/v1/rides/1
+
+Create ride
+https://riddemyway.herokuapp.com/api/v1/rides
+
+Request ride
+
+https://riddemyway.herokuapp.com/api/v1/rides
+
+---
 ## UI Templates
 [http://dygn.github.io/Ride-My-Way/UI](http://dygn.github.io/Ride-My-Way/UI/)
 
